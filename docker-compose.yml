@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  echo-http-server:
+    container_name: echo-http-server
+    tty: true
+    build: containers/echo-http-server
+    ports:
+      - "12345:12345"
+  static-files-http-server:
+    container_name: static-files-http-server
+    tty: true
+    build: containers/static-files-http-server
+    volumes:
+      - ./www:/home/static
+    ports:
+      - "8080:8080"

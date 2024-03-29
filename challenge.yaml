@@ -1,0 +1,65 @@
+title: Testovací úloha
+description: README.md
+handbook: HANDBOOK.md
+shortDescription: null
+tags:
+  - test
+  - test2
+  - test3
+flags:
+  - name: Dynamická vlajka
+    description: |-
+      blah blah
+    identifier: flag-1
+    maximumTries: 3
+    placeholder: flag1
+    points: 10
+    type: "1"
+  - name: Statická vlajka
+    description: |-
+      blah blah
+    answer: flag{1234}
+    identifier: flag-2
+    maximumTries: 2
+    points: 20
+    type: "2"
+  - name: Vlajka s možností výběru odpovědi
+    description: |-
+      blah blah
+    identifier: flag-3
+    maximumTries: 2
+    options:
+      - correct: true
+        value: správná odpověd
+      - correct: false
+        value: chybná odpověd
+    points: 30
+    type: "3"
+  - name: Automaticky vyhodnocovaná vlajka
+    description: |-
+      blah blah
+    command: |-
+      sh -c 'printf "GET /solved HTTP/1.1
+      Host: localhost
+      Connection: close
+
+      " | nc localhost 12345 | grep true'
+    container: echo-http-server
+    exitCode: 0
+    identifier: flag-4
+    interval: 1000
+    points: 30
+    solved: false
+    type: "4"
+  - name: Trigger vlajka
+    description: |-
+      blah blah
+    command: |-
+      sh -c 'exit 0'
+    container: echo-http-server
+    exitCode: 0
+    identifier: flag-5
+    interval: 0
+    points: 30
+    solved: false
+    type: "4"
