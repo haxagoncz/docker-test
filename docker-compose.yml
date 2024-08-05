@@ -10,7 +10,8 @@ services:
   static-files-http-server:
     image: nginx
     tty: true
+    entrypoint: /tmp/entrypoint.sh
     volumes:
-      - ./www:/usr/share/nginx/html
+      - ./nginx-entrypoint.sh:/tmp/entrypoint.sh
     ports:
       - "80"
