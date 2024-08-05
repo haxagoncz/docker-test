@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   echo-http-server:
     container_name: echo-http-server
@@ -14,4 +12,4 @@ services:
       - FLAG=${FLAG}
     tty: true
     ports:
-      - "8080"
+      - "8080:8080"
