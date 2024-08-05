@@ -10,7 +10,5 @@ services:
   static-files-http-server:
     build: containers/nginx
     tty: true
-    environment:
-      FLAG: "#@{{flag1}}@#"
     ports:
       - "80"
