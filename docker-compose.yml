@@ -13,4 +13,4 @@ services:
     environment:
       - FLAG="#@{{flag1}}@#"
     ports:
-      - "81:80"
+      - "80"
