@@ -4,7 +4,7 @@ services:
     tty: true
     build: containers/echo-http-server
     ports:
-      - "12345"
+      - "12345:12345"
   static-files-http-server:
     build: containers/nginx
     container_name: static-files-http-server
@@ -12,4 +12,4 @@ services:
       - FLAG=${FLAG}
     tty: true
     ports:
-      - "80"
+      - "80:80"
