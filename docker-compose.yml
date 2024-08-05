@@ -12,4 +12,4 @@ services:
       - FLAG=${FLAG}
     tty: true
     ports:
-      - "8080:8080"
+      - "80"
