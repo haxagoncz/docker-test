@@ -10,7 +10,7 @@ services:
   static-files-http-server:
     build: containers/nginx
     environment:
-      - FLAG=${FLAAG}
+      - FLAG=${FLAG}
     tty: true
     ports:
       - "80"
