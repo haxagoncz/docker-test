@@ -11,6 +11,6 @@ services:
     image: nginx
     tty: true
     volumes:
-      - ./www:/usr/share/nginx/html:
+      - ./www:/usr/share/nginx/html
     ports:
       - "80"
