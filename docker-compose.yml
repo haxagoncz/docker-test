@@ -11,6 +11,6 @@ services:
     build: containers/nginx
     tty: true
     environment:
-      - FLAG: "#@{{flag1}}@#"
+      - FLAG="#@{{flag1}}@#"
     ports:
       - "80"
