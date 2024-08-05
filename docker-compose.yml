@@ -8,10 +8,9 @@ services:
     ports:
       - "12345"
   static-files-http-server:
-    image: nginx
+    build: containers/nginx
     tty: true
-    entrypoint: /tmp/entrypoint.sh
-    volumes:
-      - ./nginx-entrypoint.sh:/tmp/entrypoint.sh
+    environment:
+      - FLAG="#@{{flag1}}@#"
     ports:
-      - "80"
+      - "81:80"
