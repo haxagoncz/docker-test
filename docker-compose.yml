@@ -6,7 +6,7 @@ services:
     tty: true
     build: containers/echo-http-server
     ports:
-      - "12345:12345"
+      - "12345"
   static-files-http-server:
     container_name: static-files-http-server
     tty: true
@@ -14,4 +14,4 @@ services:
     volumes:
       - ./www:/home/static
     ports:
-      - "8080:8080"
+      - "8080"
