@@ -8,10 +8,9 @@ services:
     ports:
       - "12345"
   static-files-http-server:
-    container_name: static-files-http-server
+    image: nginx
     tty: true
-    build: containers/static-files-http-server
     volumes:
-      - ./www:/home/static
+      - ./www:/usr/share/nginx/html:
     ports:
-      - "8080"
+      - "80"
