@@ -6,7 +6,7 @@ GOOS=linux GOARCH=386 go build ./server.go
 # Flags
 
 ## 1. Dynamic flag
-`curl IP:8080/flag` > `haxagon{DYNAMIC_HASH}`
+`curl IP:80/flag` > `haxagon{DYNAMIC_HASH}`
 
 ## 2. Static flag 
 `curl IP:12345` > `flag1234`
