@@ -3,9 +3,9 @@ description: README.md
 handbook: HANDBOOK.md
 shortDescription: null
 access:
-  - port: 8080
-    type: http
   - port: 12345
+    type: http
+  - port: 80
     type: http
 tags:
   - test
