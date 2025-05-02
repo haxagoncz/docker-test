@@ -8,9 +8,7 @@ access:
   - port: 80
     type: http
 tags:
-  - test
-  - test2
-  - test3
+  - Linux
 flags:
   - name: Dynamická vlajka
     description: |-
