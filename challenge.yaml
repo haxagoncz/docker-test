@@ -8,7 +8,7 @@ access:
   - port: 80
     type: http
 tags:
-  - Linux
+  - Networking
 flags:
   - name: Dynamická vlajka
     description: |-
