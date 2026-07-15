@@ -68,3 +68,16 @@ flags:
     points: 30
     solved: false
     type: "4"
+  - name: Otevřená vlajka
+    identifier: flag-open
+    description: Srdce počítače
+    points: 30
+    type: "8"
+    maximumTries: 2
+    answerOptions:
+      - value: processor
+        correct: true
+      - value: základní deska
+        correct: false
+      - value: ram
+        correct: false
